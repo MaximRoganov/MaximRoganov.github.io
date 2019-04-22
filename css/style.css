@@ -1,3 +1,141 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&subset=cyrillic");
 
 
+@charset "UTF-8";
+* {
+  box-sizing: border-box; }
+
+body {
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+  color: #494949; }
+
+main {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+.container,
+.col {
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.col {
+  width: 100%; }
+  .col-3 {
+    width: 33.33%; }
+  .col-2 {
+    width: 16.66%; }
+
+.row {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -10px;
+  margin-right: -10px; }
+
+.container {
+  width: 1140px;
+  margin: 0 auto; }
+
+ul {
+  padding-left: 0;
+  list-style: none; }
+  ul li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 0.3125rem; }
+    ul li:before {
+      content: '';
+      display: block;
+      width: 5px;
+      height: 5px;
+      background: #000;
+      position: absolute;
+      left: 0;
+      top: 10px; }
+
+ol {
+  padding-left: 0;
+  list-style-type: none;
+  counter-reset: list 0; }
+  ol li {
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 0.3125rem; }
+    ol li:before {
+      counter-increment: list;
+      /* Увеличиваем значение счетчика */
+      content: counter(list) ".";
+      margin-right: 10px;
+      font-size: 0.9375rem;
+      margin-top: 2px;
+      font-weight: bold; }
+
+li {
+  line-height: 1.5; }
+
+p {
+  font-size: 1rem; }
+
+h1, .h1 {
+  font-size: 2.8125rem;
+  margin-top: 1.5625rem;
+  margin-bottom: 1.5625rem; }
+
+h2, .h2 {
+  font-size: 2.1875rem;
+  margin-top: 1.5625rem;
+  margin-bottom: 1.5625rem; }
+
+h3, .h3 {
+  font-size: 1.6875rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem; }
+
+h4, .h4 {
+  font-size: 1.25rem;
+  margin-top: 0.9375rem;
+  margin-bottom: 0.9375rem; }
+
+h5, .h5 {
+  font-size: 1.0625rem;
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem; }
+
+.font-small {
+  font-size: 0.8125rem; }
+
+.img {
+  width: 150px;
+  height: 150px;
+  background-color: grey;
+  display: inline-block; }
+
+.text-center {
+  text-align: center; }
+
+.clearfix {
+  clear: both;
+  width: 100%; }
+
+.d-flex {
+  display: -ms-flexbox;
+  display: flex; }
+
+.img-fluid {
+  max-width: 100%; }
+
+.portfolio {
+  margin-top: 3.125rem; }
+
+.portfolio__item {
+  margin-bottom: 1.875rem; }
+  .portfolio__item .img {
+    margin-bottom: 0.625rem; }
+  .portfolio__item a {
+    color: #494949;
+    text-decoration: underline;
+    font-weight: 500;
+    text-transform: uppercase; }
 
