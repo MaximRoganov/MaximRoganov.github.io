@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&display=swap&subset=cyrillic");
 
 
 @charset "UTF-8";
@@ -24,14 +24,18 @@ main {
   flex-basis: 0;
   -ms-flex-positive: 1;
   flex-grow: 1; }
-  .col-3 {
+  .col_3 {
     -ms-flex: 0 0 33.33%;
     flex: 0 0 33.33%;
     max-width: 33.33%; }
-  .col-2 {
+  .col_2 {
     -ms-flex: 0 0 16.66%;
     flex: 0 0 16.66%;
     max-width: 16.66%; }
+  .col_auto {
+    flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    max-width: auto; }
 
 .row {
   -ms-flex-wrap: wrap;
@@ -139,7 +143,26 @@ h5,
   display: -ms-flexbox;
   display: flex; }
 
+.align-items-center {
+  -ms-flex-align: center;
+  align-items: center; }
+
 .img-fluid {
+  max-width: 100%; }
+
+.img-wrap_avatar {
+  overflow: hidden;
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 100%; }
+
+.avatar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 100%;
   max-width: 100%; }
 
 .portfolio {
@@ -148,6 +171,7 @@ h5,
 .portfolio__item {
   margin-bottom: 1.875rem; }
   .portfolio__item .img {
+    border: 2px solid #f0f0f0;
     margin-bottom: 0.625rem; }
   .portfolio__item a {
     color: #494949;
@@ -155,20 +179,33 @@ h5,
     font-weight: 500;
     text-transform: uppercase; }
 
-@media (max-width: 992px) {
-  html {
-    font-size: 14px; } }
+@media (max-width: 1650px) {
+  width: 1650px; }
 
-@media (max-width: 576px) {
+@media (max-width: 1200px) {
+  .container {
+    width: 992px; } }
+
+@media (max-width: 992px) {
+  .container {
+    width: 100%; } }
+
+@media (max-width: 768px) {
   html {
-    font-size: 11px; }
-  .col-sm-6 {
+    font-size: 14px; }
+  .col-sm_6 {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
-    max-width: 50%; } }
-
-@media (max-width: 400px) {
-  .col {
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%; } }
+    max-width: 50%; }
+  .col-sm_3 {
+    -ms-flex: 0 0 33.33%;
+    flex: 0 0 33.33%;
+    max-width: 33.33%; }
+  .col-sm_2 {
+    -ms-flex: 0 0 16.66%;
+    flex: 0 0 16.66%;
+    max-width: 16.66%; }
+  .col-sm_auto {
+    flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    max-width: auto; } }

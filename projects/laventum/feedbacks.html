@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="NEW PROJECT">
+    <meta name="author" content="NEW PROJECT">
+    <title>NEW PROJECT</title>
+    <link rel="icon" type="img/png" href="img/favicon.png" />
+    <link href="css/lib.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+
+<body><div class="modal fade" id="popup_form1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                <div class="popup_form">
+                    <div class="popup_form_title text-center">заказать звонок</div>
+                    <form action="">
+                        <label for="surname">Фамилия</label>
+                        <input name="surname" type="text" placeholder="Ваша фамилия">
+                        <label for="name">Имя</label>
+                        <input type="text" name="name" placeholder="Ваше имя">
+                        <label for="phone">Ваш контактный телефон*</label>
+                        <input name="phone" type="text">
+                        <div class="select_group">
+                            <label for="start">С</label>
+                            <select name="start">
+                                <option selected value="11-00">11-00</option>
+                                <option value="12-00">12-00</option>
+                                <option value="13-00">13-00</option>
+                                <option value="14-00">14-00</option>
+                                <option value="15-00">15-00</option>
+                            </select>
+                            <label for="finish">До</label>
+                            <select name="finish">
+                                <option selected value="11-00">11-00</option>
+                                <option value="12-00">12-00</option>
+                                <option value="13-00">13-00</option>
+                                <option value="14-00">14-00</option>
+                                <option value="15-00">15-00</option>
+                            </select>
+                        </div>
+                        <div class="text-center">
+                            <button class="pill pill-empty text-center" type="submit">заказать</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="popup_form2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <div class="popup_form">
+                        <div class="popup_form_title text-center">Запишитесь на бесплатную демонстрацию
+                        </div>
+                        <form action="">
+                            <label for="surname">Фамилия</label>
+                            <input name="surname" type="text" placeholder="Ваша фамилия">
+                            <label for="name">Имя</label>
+                            <input type="text" name="name" placeholder="Ваше имя">
+                            <label for="phone">Ваш контактный телефон*</label>
+                            <input name="phone" type="text">
+                            <div class="text-center">
+                                <button class="pill pill-empty text-center" type="submit">записаться</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="modal fade" id="popup_form3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <div class="popup_form">
+                        <div class="popup_form_title text-center">заявка на участие
+                        </div>
+                        <form action="">
+                            <label for="surname">Фамилия</label>
+                            <input name="surname" type="text" placeholder="Ваша фамилия">
+                            <label for="name">Имя</label>
+                            <input type="text" name="name" placeholder="Ваше имя">
+                            <label for="phone">Ваш контактный телефон*</label>
+                            <input name="phone" type="text">
+                            <div class="text-center">
+                                <button class="pill pill-empty text-center" type="submit">принять участие</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="popup_form4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                <div class="popup_form">
+                    <div class="popup_form_title text-center">заявка на запрос цены</div>
+                    <form action="">
+                        <label for="surname">Фамилия</label>
+                        <input name="surname" type="text" placeholder="Ваша фамилия">
+                        <label for="name">Имя</label>
+                        <input type="text" name="name" placeholder="Ваше имя">
+                        <label for="phone">Ваш контактный телефон*</label>
+                        <input name="phone" type="text">
+                            <label>Время звонка</label>
+                        <div class="select_group">
+
+                            <label for="start">С</label>
+                            <select name="start">
+                                <option selected value="11-00">11-00</option>
+                                <option value="12-00">12-00</option>
+                                <option value="13-00">13-00</option>
+                                <option value="14-00">14-00</option>
+                                <option value="15-00">15-00</option>
+                            </select>
+                            <label for="finish">До</label>
+                            <select name="finish">
+                                <option selected value="11-00">11-00</option>
+                                <option value="12-00">12-00</option>
+                                <option value="13-00">13-00</option>
+                                <option value="14-00">14-00</option>
+                                <option value="15-00">15-00</option>
+                            </select>
+                        </div>
+                        <div class="text-center">
+                            <button class="pill pill-empty text-center" type="submit">узнать</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="header_first_line">
+            <div class="container">
+                <div class="header-logo">
+                    <a href="#">
+                        <img src="img/logo.png" alt="img/logo.png">
+                    </a>
+                </div>
+                <div class="clearfix visible-xs"></div>
+                <nav class="top_menu" id="top_menu">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">О Лавентум</a></li>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">Производители</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Галерея</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="open_mobile_menu" id="open_mobile_menu"></div>
+                <div class="clearfix visible-xs"></div>
+                <div class="header-contacts">
+                    <a class="header-contacts-phone" href="tel:8 (495) 775 50 82">8 (495) 775 50 82</a>
+                    <div class="clearfix"></div>
+                    <a class="header-contacts-act_link" href="#" data-toggle="modal" data-target="#popup_form1"><span>Заказать звонок</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="mobile_menu_wrap hidden-md hidden-lg" id="mobile_menu_wrap">
+        </div>
+        <div class="header_second_line">
+            <div class="container">
+                <div class="content">
+                    <nav class="top_second_menu">
+                        <ul class="nav navbar-nav" id="top_menu2">
+                            <li><a href="#">партнерство</a></li>
+                            <li><a href="#">Обучение</a></li>
+                            <li><a href="#">техническая поддержка</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header-find">
+                        <form action="">
+                            <input type="text" placeholder="Поиск">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <ol class="breadcrumb">
+                    <li><a href="#">Главная</a></li>
+                    <li class="active"><a href="#">Отзывы</a></li>
+                </ol>
+            </div>
+        </div>
+        <section class="feedbacks text_page">
+
+        <div class="container">
+              <h1>Отзывы</h1>
+        </div>
+           <div class="container">
+             
+               <div class="row feedbacks_item">
+                   <div class="col-xs-12">
+                      
+                           <h2>НИИ нейрохирургии им. Бурденко</h2>
+
+                       
+                   </div>
+                   <div class="col-sm-2 col-xs-12">
+                       <img class="img-responsive" src="img/test/feedback1.png" alt="img/test/feedback1.png">
+                   </div>
+                   <div class="col-sm-10 col-xs-12">
+                       <p>Партнерские отношения между Институтом и нашей компании длятся уже много лет. Мы принимаем участие во всех научно-практических мероприятиях НИИ нейрохирургии им. Бурденко.  Именно в этой клинике проходят апробации самого современного оборудования, которое поставляет в РФ наша компания.  Уже на протяжении 4 лет сотрудники лаборатории нейрофизиологии Огурцова Анна Анатольевна и Козлова Антонина Борисовна используют для проведения интраоперационного нейрофизиологического мониторинга аппарат ISIS IOM (Inomed). Совместно с лабораторией мы проводим обучающие циклы по ИОНМ, на которых проходят обучение доктора, работающие на нашем оборудовании. Все доктора, работающие с нами знают, что мы никогда не забываем о них после продажи оборудования, и всегда поддерживаем наших пользователей.</p>
+
+                       <p class="who text-right"><i>Директор НИИ нейрохирургии им. Н.Н.Бурденко Александр Александрович Потапов</i></p>
+                   </div>
+
+
+                   <div class="clearfix"></div>
+
+              
+               </div>
+           </div>
+           <div class="feedbacks_item_photo grey_bg">
+               <div class="container">
+                 <div class="row">
+                       <div class="col-sm-4 col-sm-offset-2 col-xs-12 col-xs-offset-0">
+                           <img src="img/test/feedback2.png" alt="img/test/feedback2.png"" class="img-responsive">
+                       </div>
+                        <div class="col-sm-4 col-xs-12">
+                           <img src="img/test/feedback3.png" alt="img/test/feedback3.png"" class="img-responsive">
+                       </div>
+                   </div>
+           </div>
+           </div>
+
+
+
+
+
+
+
+
+
+           <div class="container">
+               <div class="row feedbacks_item">
+                   <div class="col-xs-12">
+                      
+                           <h2>НИИ скорой медицинской помощи им. Н.В. Склифисовского</h2>
+
+                       
+                   </div>
+                   <div class="col-sm-2 col-xs-12">
+                       <img class="img-responsive" src="img/test/feed4.png" alt="img/test/feed4.png">
+                   </div>
+                   <div class="col-sm-10 col-xs-12">
+                       <p>Главный нейрохирург города Москвы Гринь Андрей Анатольевич – ведущий спинальный нейрохирург нашей страны. Как всем известно, Андрей Анатольевич использует в своей работе все самые современные технологии  в соответствии с мировыми стандартами, именно поэтому он проводит оперативные вмешательства только под контролем нейрофизиологического монитора ISIS IOM.  Профессор Гринь  уже оценил те преимущества, которые дает монитор целостности нервов ISIS IOM, а также простоту  его использования.  Об опыте работы, а также методику проведения нейромониторинга Андрей Анатольевич описывает в своих книгах  «Видеоэндоскопическая хирургия повреждений  и заболеваний позвоночника» и «Травма позвоночника и спинного мозга»</p>
+
+                       <p class="who text-right"><i>Руководитель клиники нейрохирургии Крылов Владимир Викторович</i></p>
+                   </div>
+
+
+                   <div class="clearfix"></div>
+
+              
+               </div>
+           </div>
+           <div class="feedbacks_item_photo grey_bg">
+               <div class="container">
+                 <div class="row">
+                       <div class="col-sm-4 col-sm-offset-2 col-xs-12 col-xs-offset-0">
+                           <img src="img/test/feed5.png" alt="img/test/feed5.png"" class="img-responsive">
+                       </div>
+                        <div class="col-sm-4 col-xs-12">
+                           <img src="img/test/feed6.png" alt="img/test/feed6.png"" class="img-responsive">
+                       </div>
+                   </div>
+           </div>
+           </div>
+
+
+
+
+
+
+
+           <div class="container">
+               <div class="row feedbacks_item">
+                   <div class="col-xs-12">
+                      
+                           <h2>НИИ скорой медицинской помощи им. Н.В. Склифисовского</h2>
+
+                       
+                   </div>
+                   <div class="col-sm-2 col-xs-12">
+                       <img class="img-responsive" src="img/test/feed7.png" alt="img/test/feed7.png">
+                   </div>
+                   <div class="col-sm-10 col-xs-12">
+                       <p>Открыт в 2010 году в рамках национального проекта «Здоровье». Занимает 2-е место в России по числу нейрохирургических операций после московского Института нейрохирургии РАМН имени Н. Н. Бурденко.
+Первый в России стал использовать в отделении функциональной нейрохирургии интраоперационный нейромонитор ISIS IOM MER для вшивания электродов для глубинной стимуляции мозга для лечения эпилепсии и болезни Паркинсона. Использование методики микро-и макроэлектродной записи с помощью ISIS IOM MER позволило значительно повысить точность установки электродов.
+Мы неоднократно принимали участие в обучающих семинарах и мастер-классах этого центра. 
+<a href="#">http://www.fcn-tmn.ru/otdeleniya/otdelenie-funktsionalnoj-nejrokhirurgii.php</a></p>
+
+                       <p class="who text-right"><i>Главный врач Суфианов Альберт Акрамович., научный руководитель Владимир Викторович Крылов</i></p>
+                   </div>
+
+
+                   <div class="clearfix"></div>
+
+              
+               </div>
+           </div>
+           <div class="feedbacks_item_photo grey_bg">
+               <div class="container">
+                 <div class="row">
+                       <div class="col-sm-4 col-sm-offset-2 col-xs-12 col-xs-offset-0">
+                           <img src="img/test/feed8.png" alt="img/test/feed8.png"" class="img-responsive">
+                       </div>
+                        <div class="col-sm-4 col-xs-12">
+                           <img src="img/test/feed9.png" alt="img/test/feed9.png"" class="img-responsive">
+                       </div>
+                   </div>
+           </div>
+           </div>
+
+
+
+
+
+
+
+            <div class="container">
+               <div class="row feedbacks_item">
+                   <div class="col-xs-12">
+                      
+                           <h2>Центральный институт травматологии и ортопедии им. Н.Н. Приорова</h2>
+
+                       
+                   </div>
+                   <div class="col-sm-2 col-xs-12">
+                       <img class="img-responsive" src="img/test/feed10.png" alt="img/test/feed10.png">
+                   </div>
+                   <div class="col-sm-10 col-xs-12">
+                       <p>Центральный научно-исследовательский институт травматологии и ортопедии им. Н.Н.Приорова осуществляет лечебную, научную, образовательную и организационную деятельность как головное учреждение страны по специальности «травматология и ортопедия». Руководитель отделения патологии позвоночника - профессор Колесов Сергей Васильевич, известный ученый и великолепный хирург. В отделении бурно развивается научная и практическая деятельность. 
+Колесов С.В.: Учитывая специфику нашего отделения и сложность патологии, с которой поступают пациенты, нашей задачей является не только отличное выполнение хирургических вмешательств, но, что не менее важно, сохранение функционального статуса пациентов, за счет снижения риска развития неврологических послеоперационных осложнений. Данное положение реализуется за счет непрерывного контроля функционального состояния нервных структур: спинного мозга и периферических нервов, как в момент коррекции позвоночника, так и при установке каждого транспедикулярного винта. 
+<a href="#">http://spine7.ru/index.php/neiromonitoring.html</a></p>
+
+                       <p class="who text-right"><i>Главный врач Суфианов Альберт Акрамович., научный руководитель Владимир Викторович Крылов</i></p>
+                   </div>
+
+
+                   <div class="clearfix"></div>
+
+              
+               </div>
+           </div>
+           <div class="feedbacks_item_photo grey_bg">
+               <div class="container">
+                 <div class="row">
+                       <div class="col-sm-4 col-sm-offset-2 col-xs-12 col-xs-offset-0">
+                           <img src="img/test/feed11.png" alt="img/test/feed11.png"" class="img-responsive">
+                       </div>
+                        <div class="col-sm-4 col-xs-12">
+                           <img src="img/test/feed12.png" alt="img/test/feed12.png"" class="img-responsive">
+                       </div>
+                   </div>
+           </div>
+           </div>
+           
+           <div class="container text-center">
+               <ul class="pagination">
+  <li class="active"><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+</ul>
+           </div>
+              
+
+        </section>
+    </main>
+    <footer>
+        <div class="footer_first_line">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3 hidden-xs">
+                        <nav>
+                            <ul class="nav">
+                                <li><a href="#">каталог</a></li>
+                                <li><a href="#">обучение</a></li>
+                                <li><a href="#">тех. поддержка</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-sm-3 hidden-xs">
+                        <nav>
+                            <ul class="nav">
+                                <li><a href="#">о компании</a></li>
+                                <li><a href="#">отзывы</a></li>
+                                <li><a href="#">новости</a></li>
+                                <li><a href="#">контакты</a></li>
+                                <li><a href="#">видео</a></li>
+                                <li><a href="#">партнерство</a></li>
+                                <li><a href="#">производители</a></li>
+                                <li><a href="#">производители</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="footer_contacts">
+                            <div class="footer_contacts_title">Тел./Факс:</div>
+                            <a href="tel:8 (800) 700-50-82">8 (800) 700-50-82</a>
+                        </div>
+                        <div class="footer_contacts">
+                            <div class="footer_contacts_title">Бесплатный звонок:</div>
+                            <a href="tel:8 (800) 700-50-82"> 8 (800) 700-50-82</a>
+                        </div>
+                        <div class="footer_contacts">
+                            <div class="footer_contacts_title">Адрес:</div>
+                            <address>123100, г. Москва,
+                                <br> ул. Сергея Макеева, д. 7, стр. 2</address>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="footer_contacts">
+                            <div class="footer_contacts_title">По  вопросам сотрудничества:</div>
+                            <a href="mailto:info@laventum.ru">info@laventum.ru</a>
+                        </div>
+                        <div class="footer_contacts">
+                            <div class="footer_contacts_title">Сервисная поддержка:</div>
+                            <a href="mailto:service@laventum.ru">service@laventum.ru</a>
+                        </div>
+                        <div class="footer_contacts">
+                            <div class="footer_contacts_title">Координатор отдела продаж:</div>
+                            <a href="mailto:office@laventum.ru">office@laventum.ru</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="footer_second_line">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <div class="copyrights">
+                            © 2010-2013 ООО «Лавентум»
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="js/lib.js"></script>
+<script src="js/app.js"></script>
+
+</html>

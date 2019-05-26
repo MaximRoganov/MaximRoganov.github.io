@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="NEW PROJECT">
+    <meta name="author" content="NEW PROJECT">
+    <title>NEW PROJECT</title>
+    <link rel="icon" type="img/png" href="img/favicon.png" />
+    <link href="css/lib.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+
+<body><div class="modal fade" id="popup_form1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                <div class="popup_form">
+                    <div class="popup_form_title text-center">заказать звонок</div>
+                    <form action="">
+                        <label for="surname">Фамилия</label>
+                        <input name="surname" type="text" placeholder="Ваша фамилия">
+                        <label for="name">Имя</label>
+                        <input type="text" name="name" placeholder="Ваше имя">
+                        <label for="phone">Ваш контактный телефон*</label>
+                        <input name="phone" type="text">
+                        <div class="select_group">
+                            <label for="start">С</label>
+                            <select name="start">
+                                <option selected value="11-00">11-00</option>
+                                <option value="12-00">12-00</option>
+                                <option value="13-00">13-00</option>
+                                <option value="14-00">14-00</option>
+                                <option value="15-00">15-00</option>
+                            </select>
+                            <label for="finish">До</label>
+                            <select name="finish">
+                                <option selected value="11-00">11-00</option>
+                                <option value="12-00">12-00</option>
+                                <option value="13-00">13-00</option>
+                                <option value="14-00">14-00</option>
+                                <option value="15-00">15-00</option>
+                            </select>
+                        </div>
+                        <div class="text-center">
+                            <button class="pill pill-empty text-center" type="submit">заказать</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="popup_form2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <div class="popup_form">
+                        <div class="popup_form_title text-center">Запишитесь на бесплатную демонстрацию
+                        </div>
+                        <form action="">
+                            <label for="surname">Фамилия</label>
+                            <input name="surname" type="text" placeholder="Ваша фамилия">
+                            <label for="name">Имя</label>
+                            <input type="text" name="name" placeholder="Ваше имя">
+                            <label for="phone">Ваш контактный телефон*</label>
+                            <input name="phone" type="text">
+                            <div class="text-center">
+                                <button class="pill pill-empty text-center" type="submit">записаться</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="modal fade" id="popup_form3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <div class="popup_form">
+                        <div class="popup_form_title text-center">заявка на участие
+                        </div>
+                        <form action="">
+                            <label for="surname">Фамилия</label>
+                            <input name="surname" type="text" placeholder="Ваша фамилия">
+                            <label for="name">Имя</label>
+                            <input type="text" name="name" placeholder="Ваше имя">
+                            <label for="phone">Ваш контактный телефон*</label>
+                            <input name="phone" type="text">
+                            <div class="text-center">
+                                <button class="pill pill-empty text-center" type="submit">принять участие</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="popup_form4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                <div class="popup_form">
+                    <div class="popup_form_title text-center">заявка на запрос цены</div>
+                    <form action="">
+                        <label for="surname">Фамилия</label>
+                        <input name="surname" type="text" placeholder="Ваша фамилия">
+                        <label for="name">Имя</label>
+                        <input type="text" name="name" placeholder="Ваше имя">
+                        <label for="phone">Ваш контактный телефон*</label>
+                        <input name="phone" type="text">
+                            <label>Время звонка</label>
+                        <div class="select_group">
+
+                            <label for="start">С</label>
+                            <select name="start">
+                                <option selected value="11-00">11-00</option>
+                                <option value="12-00">12-00</option>
+                                <option value="13-00">13-00</option>
+                                <option value="14-00">14-00</option>
+                                <option value="15-00">15-00</option>
+                            </select>
+                            <label for="finish">До</label>
+                            <select name="finish">
+                                <option selected value="11-00">11-00</option>
+                                <option value="12-00">12-00</option>
+                                <option value="13-00">13-00</option>
+                                <option value="14-00">14-00</option>
+                                <option value="15-00">15-00</option>
+                            </select>
+                        </div>
+                        <div class="text-center">
+                            <button class="pill pill-empty text-center" type="submit">узнать</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="header_first_line">
+            <div class="container">
+                <div class="header-logo">
+                    <a href="#">
+                        <img src="img/logo.png" alt="img/logo.png">
+                    </a>
+                </div>
+                <div class="clearfix visible-xs"></div>
+                <nav class="top_menu" id="top_menu">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">О Лавентум</a></li>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">Производители</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Галерея</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="open_mobile_menu" id="open_mobile_menu"></div>
+                <div class="clearfix visible-xs"></div>
+                <div class="header-contacts">
+                    <a class="header-contacts-phone" href="tel:8 (495) 775 50 82">8 (495) 775 50 82</a>
+                    <div class="clearfix"></div>
+                    <a class="header-contacts-act_link" href="#" data-toggle="modal" data-target="#popup_form1"><span>Заказать звонок</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="mobile_menu_wrap hidden-md hidden-lg" id="mobile_menu_wrap">
+        </div>
+        <div class="header_second_line">
+            <div class="container">
+                <div class="content">
+                    <nav class="top_second_menu">
+                        <ul class="nav navbar-nav" id="top_menu2">
+                            <li><a href="#">партнерство</a></li>
+                            <li><a href="#">Обучение</a></li>
+                            <li><a href="#">техническая поддержка</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header-find">
+                        <form action="">
+                            <input type="text" placeholder="Поиск">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <ol class="breadcrumb">
+                    <li><a href="#">Главная</a></li>
+                    <li class="active"><a href="#">Новости</a></li>
+                </ol>
+            </div>
+        </div>
+        <section class="news_inner text_page">
+            <div class="container">
+                <h1>новости</h1>
+                <div class="year_dates">
+                    <div class="title">Год публикации:</div>
+                    <nav>
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">2016</a></li>
+                            <li><a href="#">2017</a></li>
+                            <li><a href="#">2018</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="news_inner_content">
+                <div class="news_inner_content_item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-3 col-xs-12">
+                            <div class="img-wrap">
+                                <img src="img/test/news_test/test1.jpg" alt="img/test/news_test/test1.jpg" class="img-responsive">
+                                </div>
+                            </div>
+                            <div class="col-sm-8 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+                                <a href="#" class="title">Подписан эксклюзивный контракт с ведущим 
+мировым  производителем RAUMEDIC
+</a>
+                                <p>Мы подписали эксклюзивный контракт с ведущим мировым производителем нейрофизиологического оборудования компанией Cadwell (США). Теперь мы можем предложить Вам оборудование, которое покроет все потребности ЛПУ и обеспечит сквозное наблюдение за пациентом: предоперационное обследование – интраоперационный мониторинг – послеоперационное наблюдение. </p>
+                                <div class="date">
+                                    27.06.16
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news_inner_content_item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-3 col-xs-12">
+                            <div class="img-wrap">
+                                <img src="img/test/news_test/test2.jpg" alt="img/test/news_test/test2.jpg" class="img-responsive">
+                                </div>
+                            </div>
+                            <div class="col-sm-8 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+                                <a href="#" class="title">ООО "Лавентум" эксклюзивный поставщик аппаратов
+ИВЛ eVent Medical</a>
+                                <p>С радостью сообщаем Вам о получении новых регистрационных удостоверений на аппараты искусственной вентиляции легких eVolution и Inspiration производства eVent Medical (США). С 2016 года наша компания эксклюзивно занимается поставками аппаратов ИВЛ  и расходных материалов eVent Medical на территории Российской Федерации. </p>
+                                <div class="date">
+                                    27.06.16
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news_inner_content_item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-3 col-xs-12">
+                            <div class="img-wrap">
+                                <img src="img/test/news_test/test3.jpg" alt="img/test/news_test/test3.jpg" class="img-responsive">
+                                </div>
+                            </div>
+                            <div class="col-sm-8 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+                                <a href="#" class="title">Первый Сибирский нейрохирурхический конгресс</a>
+                                <p>С радостью сообщаем Вам о получении новых регистрационных удостоверений на аппараты искусственной вентиляции легких eVolution и Inspiration производства eVent Medical (США). С 2016 года наша компания эксклюзивно занимается поставками аппаратов ИВЛ  и расходных материалов eVent Medical на территории Российской Федерации. </p>
+                                <div class="date">
+                                    27.06.16
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="news_inner_content_item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-3 col-xs-12">
+                            <div class="img-wrap">
+                                <img src="img/test/news_test/test1.jpg" alt="img/test/news_test/test1.jpg" class="img-responsive">
+                            </div>
+                            </div>
+                            <div class="col-sm-8 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+                                <a href="#" class="title">Подписан эксклюзивный контракт с ведущим 
+мировым  производителем RAUMEDIC
+</a>
+                                <p>Мы подписали эксклюзивный контракт с ведущим мировым производителем нейрофизиологического оборудования компанией Cadwell (США). Теперь мы можем предложить Вам оборудование, которое покроет все потребности ЛПУ и обеспечит сквозное наблюдение за пациентом: предоперационное обследование – интраоперационный мониторинг – послеоперационное наблюдение. </p>
+                                <div class="date">
+                                    27.06.16
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news_inner_content_item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-3 col-xs-12">
+                                <div class="img-wrap">
+                                     <img src="img/test/news_test/test2.jpg" alt="img/test/news_test/test2.jpg" class="img-responsive">
+                                </div>
+                            </div>
+                            <div class="col-sm-8 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+                                <a href="#" class="title">Подписан эксклюзивный контракт с ведущим 
+мировым  производителем RAUMEDIC
+</a>
+                                <p>Мы подписали эксклюзивный контракт с ведущим мировым производителем нейрофизиологического оборудования компанией Cadwell (США). Теперь мы можем предложить Вам оборудование, которое покроет все потребности ЛПУ и обеспечит сквозное наблюдение за пациентом: предоперационное обследование – интраоперационный мониторинг – послеоперационное наблюдение. </p>
+                                <div class="date">
+                                    27.06.16
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                 <div class="news_inner_content_item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-3 col-xs-12">
+                            <div class="img-wrap">
+                                <img src="img/test/news_test/test3.jpg" alt="img/test/news_test/test3.jpg" class="img-responsive">
+                            </div>
+                            </div>
+                            <div class="col-sm-8 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+                                <a href="#" class="title">Подписан эксклюзивный контракт с ведущим 
+мировым  производителем RAUMEDIC
+</a>
+                                <p>Мы подписали эксклюзивный контракт с ведущим мировым производителем нейрофизиологического оборудования компанией Cadwell (США). Теперь мы можем предложить Вам оборудование, которое покроет все потребности ЛПУ и обеспечит сквозное наблюдение за пациентом: предоперационное обследование – интраоперационный мониторинг – послеоперационное наблюдение. </p>
+                                <div class="date">
+                                    27.06.16
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="container text-center">
+                <ul class="pagination">
+  <li class="active"><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+</ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer_first_line">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3 hidden-xs">
+                        <nav>
+                            <ul class="nav">
+                                <li><a href="#">каталог</a></li>
+                                <li><a href="#">обучение</a></li>
+                                <li><a href="#">тех. поддержка</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-sm-3 hidden-xs">
+                        <nav>
+                            <ul class="nav">
+                                <li><a href="#">о компании</a></li>
+                                <li><a href="#">отзывы</a></li>
+                                <li><a href="#">новости</a></li>
+                                <li><a href="#">контакты</a></li>
+                                <li><a href="#">видео</a></li>
+                                <li><a href="#">партнерство</a></li>
+                                <li><a href="#">производители</a></li>
+                                <li><a href="#">производители</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="footer_contacts">
+                            <div class="footer_contacts_title">Тел./Факс:</div>
+                            <a href="tel:8 (800) 700-50-82">8 (800) 700-50-82</a>
+                        </div>
+                        <div class="footer_contacts">
+                            <div class="footer_contacts_title">Бесплатный звонок:</div>
+                            <a href="tel:8 (800) 700-50-82"> 8 (800) 700-50-82</a>
+                        </div>
+                        <div class="footer_contacts">
+                            <div class="footer_contacts_title">Адрес:</div>
+                            <address>123100, г. Москва,
+                                <br> ул. Сергея Макеева, д. 7, стр. 2</address>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="footer_contacts">
+                            <div class="footer_contacts_title">По  вопросам сотрудничества:</div>
+                            <a href="mailto:info@laventum.ru">info@laventum.ru</a>
+                        </div>
+                        <div class="footer_contacts">
+                            <div class="footer_contacts_title">Сервисная поддержка:</div>
+                            <a href="mailto:service@laventum.ru">service@laventum.ru</a>
+                        </div>
+                        <div class="footer_contacts">
+                            <div class="footer_contacts_title">Координатор отдела продаж:</div>
+                            <a href="mailto:office@laventum.ru">office@laventum.ru</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="footer_second_line">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <div class="copyrights">
+                            © 2010-2013 ООО «Лавентум»
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="js/lib.js"></script>
+<script src="js/app.js"></script>
+
+</html>

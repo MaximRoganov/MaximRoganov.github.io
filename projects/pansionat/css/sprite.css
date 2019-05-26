@@ -1,0 +1,186 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-baloon {
+  background-image: url(sprite.png);
+  background-position: 0px -48px;
+  width: 40px;
+  height: 53px;
+}
+.icon-baloon_small_white {
+  background-image: url(sprite.png);
+  background-position: -122px -101px;
+  width: 17px;
+  height: 23px;
+}
+.icon-email_white {
+  background-image: url(sprite.png);
+  background-position: -51px -177px;
+  width: 22px;
+  height: 16px;
+}
+.icon-file_white {
+  background-image: url(sprite.png);
+  background-position: -224px 0px;
+  width: 16px;
+  height: 20px;
+}
+.icon-g1 {
+  background-image: url(sprite.png);
+  background-position: -96px -44px;
+  width: 43px;
+  height: 43px;
+}
+.icon-g2 {
+  background-image: url(sprite.png);
+  background-position: -183px -86px;
+  width: 41px;
+  height: 41px;
+}
+.icon-g3 {
+  background-image: url(sprite.png);
+  background-position: -140px 0px;
+  width: 43px;
+  height: 43px;
+}
+.icon-g4 {
+  background-image: url(sprite.png);
+  background-position: -45px -136px;
+  width: 42px;
+  height: 40px;
+}
+.icon-g5 {
+  background-image: url(sprite.png);
+  background-position: -140px -43px;
+  width: 43px;
+  height: 43px;
+}
+.icon-g6 {
+  background-image: url(sprite.png);
+  background-position: -183px 0px;
+  width: 41px;
+  height: 45px;
+}
+.icon-g7 {
+  background-image: url(sprite.png);
+  background-position: -183px -45px;
+  width: 41px;
+  height: 41px;
+}
+.icon-ic1 {
+  background-image: url(sprite.png);
+  background-position: -48px 0px;
+  width: 48px;
+  height: 48px;
+}
+.icon-ic10 {
+  background-image: url(sprite.png);
+  background-position: -126px -136px;
+  width: 35px;
+  height: 31px;
+}
+.icon-ic11 {
+  background-image: url(sprite.png);
+  background-position: 0px -177px;
+  width: 32px;
+  height: 30px;
+}
+.icon-ic12 {
+  background-image: url(sprite.png);
+  background-position: -55px -101px;
+  width: 34px;
+  height: 34px;
+}
+.icon-ic13 {
+  background-image: url(sprite.png);
+  background-position: -87px -136px;
+  width: 39px;
+  height: 39px;
+}
+.icon-ic2 {
+  background-image: url(sprite.png);
+  background-position: 0px -101px;
+  width: 55px;
+  height: 35px;
+}
+.icon-ic3 {
+  background-image: url(sprite.png);
+  background-position: 0px -136px;
+  width: 45px;
+  height: 41px;
+}
+.icon-ic4 {
+  background-image: url(sprite.png);
+  background-position: -40px -48px;
+  width: 42px;
+  height: 48px;
+}
+.icon-ic5 {
+  background-image: url(sprite.png);
+  background-position: -183px -127px;
+  width: 35px;
+  height: 45px;
+}
+.icon-ic6 {
+  background-image: url(sprite.png);
+  background-position: -140px -86px;
+  width: 42px;
+  height: 44px;
+}
+.icon-ic7 {
+  background-image: url(sprite.png);
+  background-position: 0px 0px;
+  width: 48px;
+  height: 48px;
+}
+.icon-ic8 {
+  background-image: url(sprite.png);
+  background-position: -96px 0px;
+  width: 44px;
+  height: 44px;
+}
+.icon-ic9 {
+  background-image: url(sprite.png);
+  background-position: -89px -101px;
+  width: 33px;
+  height: 33px;
+}
+.icon-phone {
+  background-image: url(sprite.png);
+  background-position: -32px -177px;
+  width: 19px;
+  height: 19px;
+}
+.icon-phone_white {
+  background-image: url(sprite.png);
+  background-position: -161px -136px;
+  width: 22px;
+  height: 22px;
+}
+.icon-prev_arr {
+  background-image: url(sprite.png);
+  background-position: -224px -20px;
+  width: 12px;
+  height: 23px;
+}
+.icon-right_arr {
+  background-image: url(sprite.png);
+  background-position: -224px -43px;
+  width: 12px;
+  height: 23px;
+}

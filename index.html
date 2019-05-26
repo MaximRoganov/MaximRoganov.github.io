@@ -15,38 +15,72 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    <script type="text/javascript">
+    (function(m, e, t, r, i, k, a) {
+        m[i] = m[i] || function() {
+            (m[i].a = m[i].a || []).push(arguments)
+        };
+        m[i].l = 1 * new Date();
+        k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-   ym(53405317, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true,
-        webvisor:true
-   });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/53405317" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-36149108-3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    ym(53405317, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true
+    });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/53405317" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-36149108-3"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-36149108-3');
-</script>
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
+    gtag('config', 'UA-36149108-3');
+    </script>
 </head>
 
 <body>
     <main>
         <div class="container">
-            <img src="img/iam.jpg" alt="это я" class="img-fluid">
-            <h1>Роганов Максим</h1>
-            <h2>веб-разработчик</h2>
+            <div class="row">
+                <div class="col col_auto d-flex align-items-center">
+                    <div class="img-wrap img-wrap_avatar">
+                        <img class="avatar" src="img/iam.jpg" alt="это я" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col col_auto">
+                    <div class="text-wrap">
+                        <h1>Роганов Максим</h1>
+                        <h2>веб-разработчик</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="box box_grey">
+                <h3>Контактные данные</h3>
+                <ul>
+                    <li>
+                        email : <a href="mailto:total.on.off@gmail.com">total.on.off@gmail.com</a>
+                    </li>
+                    <li>
+                        skype : zilot01
+                    </li>
+                    <li>
+                        phone : <a href="tel:+79150999751">+7 915 099 9751</a>
+                    </li>
+                    <li>
+                        telegram : @MaxHorner
+                    </li>
+                </ul>
+            </div>
             <h3>Умею:</h3>
             <ol>
                 <li>Верстать(семантично, блочно, адаптивно),использовать препроцессоры и html5 фреймоврки.</li>
@@ -83,125 +117,173 @@
             </ul>
             <h3>Примеры работ</h3>
             <div class="row portfolio">
-                <div class="col col-3 col-sm-6 text-center portfolio__item">
-                    <div class="img">
-                    </div>
-                    <div class="clearfix"></div>
-                    <a class="h5" href="projects/advocato/index.html" target="_blank">advocato</a>
+                <div class="col col_3 col-sm_6 text-center portfolio__item">
+                    <a target="_blank" href="projects/advocato/index.html">
+                        <div class="img"><img src="projects/advocato/project-image.png" alt="" class="img-fluid"></div>
+                        <div class="clearfix"></div><span class="portfolio__text">advocato</span>
+                    </a>
                 </div>
-                <div class="col col-3 col-sm-6 text-center portfolio__item">
-                    <div class="img">
-                    </div>
-                    <div class="clearfix"></div>
-                    <a class="h5" href="projects/allpro/index.html" target="_blank">allpro</a>
+                <div class="col col_3 col-sm_6 text-center portfolio__item">
+                    <a target="_blank" href="projects/allpro/index.html">
+                        <div class="img"><img src="projects/allpro/project-image.png" alt="" class="img-fluid"></div>
+                        <div class="clearfix"></div><span class="portfolio__text">allpro</span>
+                    </a>
                 </div>
-                <div class="col col-3 col-sm-6 text-center portfolio__item">
-                    <div class="img">
-                    </div>
-                    <div class="clearfix"></div>
-                    <a class="h5" href="projects/best-satin/index.html" target="_blank">best-satin</a>
+                <div class="col col_3 col-sm_6 text-center portfolio__item">
+                    <a target="_blank" href="projects/best-satin/index.html">
+                        <div class="img"><img src="projects/best-satin/project-image.png" alt="" class="img-fluid"></div>
+                        <div class="clearfix"></div><span class="portfolio__text">best-satin</span>
+                    </a>
                 </div>
-                <div class="col col-3 col-sm-6 text-center portfolio__item">
-                    <div class="img">
-                    </div>
-                    <div class="clearfix"></div>
-                    <a class="h5" href="projects/crossfit/index.html" target="_blank">crossfit</a>
+                <div class="col col_3 col-sm_6 text-center portfolio__item">
+                    <a target="_blank" href="projects/crossfit/index.html">
+                        <div class="img"><img src="projects/crossfit/project-image.png" alt="" class="img-fluid"></div>
+                        <div class="clearfix"></div><span class="portfolio__text">crossfit</span>
+                    </a>
                 </div>
-                <div class="col col-3 col-sm-6 text-center portfolio__item">
-                    <div class="img">
-                    </div>
-                    <div class="clearfix"></div>
-                    <a class="h5" href="projects/diagostic/index.html" target="_blank">diagostic</a>
+                <div class="col col_3 col-sm_6 text-center portfolio__item">
+                    <a target="_blank" href="projects/diagostic/index.html">
+                        <div class="img"><img src="projects/diagostic/project-image.png" alt="" class="img-fluid"></div>
+                        <div class="clearfix"></div><span class="portfolio__text">diagostic</span>
+                    </a>
                 </div>
-                <div class="col col-3 col-sm-6 text-center portfolio__item">
-                    <div class="img">
-                    </div>
-                    <div class="clearfix"></div>
-                    <a class="h5" href="projects/fuel/index.html" target="_blank">fuel</a>
+                <div class="col col_3 col-sm_6 text-center portfolio__item">
+                    <a target="_blank" href="projects/fuel/index.html">
+                        <div class="img"><img src="projects/fuel/project-image.png" alt="" class="img-fluid"></div>
+                        <div class="clearfix"></div><span class="portfolio__text">fuel</span>
+                    </a>
                 </div>
-                <div class="col col-3 col-sm-6 text-center portfolio__item">
-                    <div class="img">
-                    </div>
-                    <div class="clearfix"></div>
-                    <a class="h5" href="projects/hollywood_optics/index.html" target="_blank">hollywood_optics</a>
+                <div class="col col_3 col-sm_6 text-center portfolio__item">
+                    <a target="_blank" href="projects/gimn_12/index.html">
+                        <div class="img"><img src="projects/gimn_12/project-image.png" alt="" class="img-fluid"></div>
+                        <div class="clearfix"></div><span class="portfolio__text">gimn_12</span>
+                    </a>
                 </div>
-                <div class="col col-3 col-sm-6 text-center portfolio__item">
-                    <div class="img">
-                    </div>
-                    <div class="clearfix"></div>
-                    <a class="h5" href="projects/houses/index.html" target="_blank">houses</a>
+                <div class="col col_3 col-sm_6 text-center portfolio__item">
+                    <a target="_blank" href="projects/hollywood_optics/index.html">
+                        <div class="img"><img src="projects/hollywood_optics/project-image.png" alt="" class="img-fluid"></div>
+                        <div class="clearfix"></div><span class="portfolio__text">hollywood_optics</span>
+                    </a>
                 </div>
-                <div class="col col-3 col-sm-6 text-center portfolio__item">
-                    <div class="img">
-                    </div>
-                    <div class="clearfix"></div>
-                    <a class="h5" href="projects/iis-new/index.html" target="_blank">iis-new</a>
+                <div class="col col_3 col-sm_6 text-center portfolio__item">
+                    <a target="_blank" href="projects/houses/index.html">
+                        <div class="img"><img src="projects/houses/project-image.png" alt="" class="img-fluid"></div>
+                        <div class="clearfix"></div><span class="portfolio__text">houses</span>
+                    </a>
                 </div>
-                <div class="col col-3 col-sm-6 text-center portfolio__item">
-                    <div class="img">
-                    </div>
-                    <div class="clearfix"></div>
-                    <a class="h5" href="projects/let_tech/index.html" target="_blank">let_tech</a>
+                <div class="col col_3 col-sm_6 text-center portfolio__item">
+                    <a target="_blank" href="projects/iis-new/index.html">
+                        <div class="img"><img src="projects/iis-new/project-image.png" alt="" class="img-fluid"></div>
+                        <div class="clearfix"></div><span class="portfolio__text">iis-new</span>
+                    </a>
                 </div>
-                <div class="col col-3 col-sm-6 text-center portfolio__item">
-                    <div class="img">
-                    </div>
-                    <div class="clearfix"></div>
-                    <a class="h5" href="projects/lisitsina/index.html" target="_blank">lisitsina</a>
+                <div class="col col_3 col-sm_6 text-center portfolio__item">
+                    <a target="_blank" href="projects/ksdms/index.html">
+                        <div class="img"><img src="projects/ksdms/project-image.png" alt="" class="img-fluid"></div>
+                        <div class="clearfix"></div><span class="portfolio__text">ksdms</span>
+                    </a>
                 </div>
-                <div class="col col-3 col-sm-6 text-center portfolio__item">
-                    <div class="img">
-                    </div>
-                    <div class="clearfix"></div>
-                    <a class="h5" href="projects/london/index.html" target="_blank">london</a>
+                <div class="col col_3 col-sm_6 text-center portfolio__item">
+                    <a target="_blank" href="projects/laventum/index.html">
+                        <div class="img"><img src="projects/laventum/project-image.png" alt="" class="img-fluid"></div>
+                        <div class="clearfix"></div><span class="portfolio__text">laventum</span>
+                    </a>
                 </div>
-                <div class="col col-3 col-sm-6 text-center portfolio__item">
-                    <div class="img">
-                    </div>
-                    <div class="clearfix"></div>
-                    <a class="h5" href="projects/nazemka/index.html" target="_blank">nazemka</a>
+                <div class="col col_3 col-sm_6 text-center portfolio__item">
+                    <a target="_blank" href="projects/let_tech/index.html">
+                        <div class="img"><img src="projects/let_tech/project-image.png" alt="" class="img-fluid"></div>
+                        <div class="clearfix"></div><span class="portfolio__text">let_tech</span>
+                    </a>
                 </div>
-                <div class="col col-3 col-sm-6 text-center portfolio__item">
-                    <div class="img">
-                    </div>
-                    <div class="clearfix"></div>
-                    <a class="h5" href="projects/nuts/index.html" target="_blank">nuts</a>
+                <div class="col col_3 col-sm_6 text-center portfolio__item">
+                    <a target="_blank" href="projects/lisitsina/index.html">
+                        <div class="img"><img src="projects/lisitsina/project-image.png" alt="" class="img-fluid"></div>
+                        <div class="clearfix"></div><span class="portfolio__text">lisitsina</span>
+                    </a>
                 </div>
-                <div class="col col-3 col-sm-6 text-center portfolio__item">
-                    <div class="img">
-                    </div>
-                    <div class="clearfix"></div>
-                    <a class="h5" href="projects/Phoenix/index.html" target="_blank">Phoenix</a>
+                <div class="col col_3 col-sm_6 text-center portfolio__item">
+                    <a target="_blank" href="projects/london/index.html">
+                        <div class="img"><img src="projects/london/project-image.png" alt="" class="img-fluid"></div>
+                        <div class="clearfix"></div><span class="portfolio__text">london</span>
+                    </a>
                 </div>
-                <div class="col col-3 col-sm-6 text-center portfolio__item">
-                    <div class="img">
-                    </div>
-                    <div class="clearfix"></div>
-                    <a class="h5" href="projects/profit/index.html" target="_blank">profit</a>
+                <div class="col col_3 col-sm_6 text-center portfolio__item">
+                    <a target="_blank" href="projects/mir_piva/index.html">
+                        <div class="img"><img src="projects/mir_piva/project-image.png" alt="" class="img-fluid"></div>
+                        <div class="clearfix"></div><span class="portfolio__text">mir_piva</span>
+                    </a>
                 </div>
-                <div class="col col-3 col-sm-6 text-center portfolio__item">
-                    <div class="img">
-                    </div>
-                    <div class="clearfix"></div>
-                    <a class="h5" href="projects/slivki/index.html" target="_blank">slivki</a>
+                <div class="col col_3 col-sm_6 text-center portfolio__item">
+                    <a target="_blank" href="projects/music-school/index.html">
+                        <div class="img"><img src="projects/music-school/project-image.png" alt="" class="img-fluid"></div>
+                        <div class="clearfix"></div><span class="portfolio__text">music-school</span>
+                    </a>
                 </div>
-                <div class="col col-3 col-sm-6 text-center portfolio__item">
-                    <div class="img">
-                    </div>
-                    <div class="clearfix"></div>
-                    <a class="h5" href="projects/termoprof/index.html" target="_blank">termoprof</a>
+                <div class="col col_3 col-sm_6 text-center portfolio__item">
+                    <a target="_blank" href="projects/nazemka/index.html">
+                        <div class="img"><img src="projects/nazemka/project-image.png" alt="" class="img-fluid"></div>
+                        <div class="clearfix"></div><span class="portfolio__text">nazemka</span>
+                    </a>
                 </div>
-                <div class="col col-3 text-center portfolio__item">
-                    <div class="img">
-                    </div>
-                    <div class="clearfix"></div>
-                    <a class="h5" href="projects/woodproject/index.html" target="_blank">woodproject</a>
+                <div class="col col_3 col-sm_6 text-center portfolio__item">
+                    <a target="_blank" href="projects/nuts/index.html">
+                        <div class="img"><img src="projects/nuts/project-image.png" alt="" class="img-fluid"></div>
+                        <div class="clearfix"></div><span class="portfolio__text">nuts</span>
+                    </a>
                 </div>
-                <div class="col col-3 col-sm-6 text-center portfolio__item">
-                    <div class="img">
-                    </div>
-                    <div class="clearfix"></div>
-                    <a class="h5" href="projects/zdorovye/index.html" target="_blank">zdorovye</a>
+                <div class="col col_3 col-sm_6 text-center portfolio__item">
+                    <a target="_blank" href="projects/pansionat/index.html">
+                        <div class="img"><img src="projects/pansionat/project-image.png" alt="" class="img-fluid"></div>
+                        <div class="clearfix"></div><span class="portfolio__text">pansionat</span>
+                    </a>
+                </div>
+                <div class="col col_3 col-sm_6 text-center portfolio__item">
+                    <a target="_blank" href="projects/Phoenix/index.html">
+                        <div class="img"><img src="projects/Phoenix/project-image.png" alt="" class="img-fluid"></div>
+                        <div class="clearfix"></div><span class="portfolio__text">Phoenix</span>
+                    </a>
+                </div>
+                <div class="col col_3 col-sm_6 text-center portfolio__item">
+                    <a target="_blank" href="projects/profit/index.html">
+                        <div class="img"><img src="projects/profit/project-image.png" alt="" class="img-fluid"></div>
+                        <div class="clearfix"></div><span class="portfolio__text">profit</span>
+                    </a>
+                </div>
+                <div class="col col_3 col-sm_6 text-center portfolio__item">
+                    <a target="_blank" href="projects/slivki/index.html">
+                        <div class="img"><img src="projects/slivki/project-image.png" alt="" class="img-fluid"></div>
+                        <div class="clearfix"></div><span class="portfolio__text">slivki</span>
+                    </a>
+                </div>
+                <div class="col col_3 col-sm_6 text-center portfolio__item">
+                    <a target="_blank" href="projects/slivki2/index.html">
+                        <div class="img"><img src="projects/slivki2/project-image.png" alt="" class="img-fluid"></div>
+                        <div class="clearfix"></div><span class="portfolio__text">slivki2</span>
+                    </a>
+                </div>
+                <div class="col col_3 col-sm_6 text-center portfolio__item">
+                    <a target="_blank" href="projects/teplo_region/index.html">
+                        <div class="img"><img src="projects/teplo_region/project-image.png" alt="" class="img-fluid"></div>
+                        <div class="clearfix"></div><span class="portfolio__text">teplo_region</span>
+                    </a>
+                </div>
+                <div class="col col_3 col-sm_6 text-center portfolio__item">
+                    <a target="_blank" href="projects/termoprof/index.html">
+                        <div class="img"><img src="projects/termoprof/project-image.png" alt="" class="img-fluid"></div>
+                        <div class="clearfix"></div><span class="portfolio__text">termoprof</span>
+                    </a>
+                </div>
+                <div class="col col_3 col-sm_6 text-center portfolio__item">
+                    <a target="_blank" href="projects/woodproject/index.html">
+                        <div class="img"><img src="projects/woodproject/project-image.png" alt="" class="img-fluid"></div>
+                        <div class="clearfix"></div><span class="portfolio__text">woodproject</span>
+                    </a>
+                </div>
+                <div class="col col_3 col-sm_6 text-center portfolio__item">
+                    <a target="_blank" href="projects/zdorovye/index.html">
+                        <div class="img"><img src="projects/zdorovye/project-image.png" alt="" class="img-fluid"></div>
+                        <div class="clearfix"></div><span class="portfolio__text">zdorovye</span>
+                    </a>
                 </div>
             </div>
         </div>

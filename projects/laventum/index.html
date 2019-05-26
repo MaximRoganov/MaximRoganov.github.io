@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="NEW PROJECT">
+    <meta name="author" content="NEW PROJECT">
+    <title>NEW PROJECT</title>
+    <link rel="icon" type="img/png" href="img/favicon.png" />
+    <link href="css/lib.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+
+<body><div class="modal fade" id="popup_form1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                <div class="popup_form">
+                    <div class="popup_form_title text-center">заказать звонок</div>
+                    <form action="">
+                        <label for="surname">Фамилия</label>
+                        <input name="surname" type="text" placeholder="Ваша фамилия">
+                        <label for="name">Имя</label>
+                        <input type="text" name="name" placeholder="Ваше имя">
+                        <label for="phone">Ваш контактный телефон*</label>
+                        <input name="phone" type="text">
+                        <div class="select_group">
+                            <label for="start">С</label>
+                            <select name="start">
+                                <option selected value="11-00">11-00</option>
+                                <option value="12-00">12-00</option>
+                                <option value="13-00">13-00</option>
+                                <option value="14-00">14-00</option>
+                                <option value="15-00">15-00</option>
+                            </select>
+                            <label for="finish">До</label>
+                            <select name="finish">
+                                <option selected value="11-00">11-00</option>
+                                <option value="12-00">12-00</option>
+                                <option value="13-00">13-00</option>
+                                <option value="14-00">14-00</option>
+                                <option value="15-00">15-00</option>
+                            </select>
+                        </div>
+                        <div class="text-center">
+                            <button class="pill pill-empty text-center" type="submit">заказать</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="popup_form2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <div class="popup_form">
+                        <div class="popup_form_title text-center">Запишитесь на бесплатную демонстрацию
+                        </div>
+                        <form action="">
+                            <label for="surname">Фамилия</label>
+                            <input name="surname" type="text" placeholder="Ваша фамилия">
+                            <label for="name">Имя</label>
+                            <input type="text" name="name" placeholder="Ваше имя">
+                            <label for="phone">Ваш контактный телефон*</label>
+                            <input name="phone" type="text">
+                            <div class="text-center">
+                                <button class="pill pill-empty text-center" type="submit">записаться</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="modal fade" id="popup_form3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <div class="popup_form">
+                        <div class="popup_form_title text-center">заявка на участие
+                        </div>
+                        <form action="">
+                            <label for="surname">Фамилия</label>
+                            <input name="surname" type="text" placeholder="Ваша фамилия">
+                            <label for="name">Имя</label>
+                            <input type="text" name="name" placeholder="Ваше имя">
+                            <label for="phone">Ваш контактный телефон*</label>
+                            <input name="phone" type="text">
+                            <div class="text-center">
+                                <button class="pill pill-empty text-center" type="submit">принять участие</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="popup_form4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                <div class="popup_form">
+                    <div class="popup_form_title text-center">заявка на запрос цены</div>
+                    <form action="">
+                        <label for="surname">Фамилия</label>
+                        <input name="surname" type="text" placeholder="Ваша фамилия">
+                        <label for="name">Имя</label>
+                        <input type="text" name="name" placeholder="Ваше имя">
+                        <label for="phone">Ваш контактный телефон*</label>
+                        <input name="phone" type="text">
+                            <label>Время звонка</label>
+                        <div class="select_group">
+
+                            <label for="start">С</label>
+                            <select name="start">
+                                <option selected value="11-00">11-00</option>
+                                <option value="12-00">12-00</option>
+                                <option value="13-00">13-00</option>
+                                <option value="14-00">14-00</option>
+                                <option value="15-00">15-00</option>
+                            </select>
+                            <label for="finish">До</label>
+                            <select name="finish">
+                                <option selected value="11-00">11-00</option>
+                                <option value="12-00">12-00</option>
+                                <option value="13-00">13-00</option>
+                                <option value="14-00">14-00</option>
+                                <option value="15-00">15-00</option>
+                            </select>
+                        </div>
+                        <div class="text-center">
+                            <button class="pill pill-empty text-center" type="submit">узнать</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="header_first_line">
+            <div class="container">
+                <div class="header-logo">
+                    <a href="#">
+                        <img src="img/logo.png" alt="img/logo.png">
+                    </a>
+                </div>
+                <div class="clearfix visible-xs"></div>
+                <nav class="top_menu" id="top_menu">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">О Лавентум</a></li>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">Производители</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Галерея</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="open_mobile_menu" id="open_mobile_menu"></div>
+                <div class="clearfix visible-xs"></div>
+                <div class="header-contacts">
+                    <a class="header-contacts-phone" href="tel:8 (495) 775 50 82">8 (495) 775 50 82</a>
+                    <div class="clearfix"></div>
+                    <a class="header-contacts-act_link" href="#" data-toggle="modal" data-target="#popup_form1"><span>Заказать звонок</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="mobile_menu_wrap hidden-md hidden-lg" id="mobile_menu_wrap">
+        </div>
+        <div class="header_second_line">
+            <div class="container">
+                <div class="content">
+                    <nav class="top_second_menu">
+                        <ul class="nav navbar-nav" id="top_menu2">
+                            <li><a href="#">партнерство</a></li>
+                            <li><a href="#">Обучение</a></li>
+                            <li><a href="#">техническая поддержка</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header-find">
+                        <form action="">
+                            <input type="text" placeholder="Поиск">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main_banner">
+            <div class="container main_banner_content">
+                <div class="row">
+                    <div class="col-xs-10 col-xs-offset-1">
+                        <div class="row top_banner_slider" id="top_banner_slider">
+                            <div class="col-xs-12 top_banner_slider_item">
+                                <div class="row">
+                                    <div class="col-sm-8 col-xs-12 top_banner_slider_item_text">
+                                        <div class="title">
+                                            <span class="title_big">laventum</span> более 10 лет, Надежный поставщик лучших производителей медицинского оборудования по всей России
+                                        </div>
+                                        <a class="pill" href="#">перейти в каталог</a>
+                                        <div class="avail">оборудование есть на складе</div>
+                                    </div>
+                                    <div class="col-sm-4 col-xs-12 top_banner_slider_item_img">
+                                        <img src="img/test/test1.png" alt="img/test/test1.png" class="img-responsive">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 top_banner_slider_item">
+                                <div class="row">
+                                    <div class="col-sm-8 col-xs-12 top_banner_slider_item_text">
+                                        <div class="title">
+                                            <span class="title_big">laventum</span> более 10 лет, Надежный поставщик лучших производителей медицинского оборудования по всей России
+                                        </div>
+                                        <a class="pill" href="#">перейти в каталог</a>
+                                        <div class="avail">оборудование есть на складе</div>
+                                    </div>
+                                    <div class="col-sm-4 col-xs-12 top_banner_slider_item_img">
+                                        <img src="img/test/test1.png" alt="img/test/test1.png" class="img-responsive">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 top_banner_slider_item">
+                                <div class="row">
+                                    <div class="col-sm-8 col-xs-12 top_banner_slider_item_text">
+                                        <div class="title">
+                                            <span class="title_big">laventum</span> более 10 лет, Надежный поставщик лучших производителей медицинского оборудования по всей России
+                                        </div>
+                                        <a class="pill" href="#">перейти в каталог</a>
+                                        <div class="avail">оборудование есть на складе</div>
+                                    </div>
+                                    <div class="col-sm-4 col-xs-12 top_banner_slider_item_img">
+                                        <img src="img/test/test1.png" alt="img/test/test1.png" class="img-responsive">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="top_cat">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="top_cat_item">
+                            <a href="#">
+                                <img src="img/icons/handshake.png" alt="img/icons/handshake.png">
+                                <span class="clearfix"></span>
+                                <span>партнерство</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="top_cat_item">
+                            <a href="#">
+                                <img src="img/icons/book.png" alt="img/icons/book.png">
+                                <span class="clearfix"></span>
+                                <span>обучение</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="top_cat_item">
+                            <a href="#">
+                                <img src="img/icons/mech.png" alt="img/icons/mech.png">
+                                <span class="clearfix"></span>
+                                <span>техническая поддержка</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="two_columns_text">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 text-center two_columns_text_header">
+                        <h2 class="line">о компании laventum</h2>
+                        <div class="clearfix"></div>
+                        <p class="light_title line">Никто кроме нас!</p>
+                    </div>
+                </div>
+                <div class="row two_columns_text_content">
+                    <div class="col-sm-6 col-xs-12">
+                        <p>
+                            С 2005 года внедряя новейшие медицинские разработки на российский рынок, наша компания считает своей миссией инновационное развитие, повышение качества и престижа отечественного здравоохранения.
+                        </p>
+                        <p>
+                            Мы поставляем оборудование высочайшего класса от производителей из Южной Кореи и Японии, Германии, Франции и Англии, Соединенных Штатов. «Лавентум» - один из лидеров на рынке в области нейрохирургии, реанимации, интенсивной терапии, травматологии, функциональной диагностики. В нашем арсенале – роботизированные системы, нейронавигация, нейромониторинг, системы для измерения давления ликвора, биологические клеи, мониторы пациента, фетальные мониторы, хирургические кровати, респираторное оборудование. Наше имя – знак качества, который носит все, что мы делаем. География оснащенных нами медучреждений насчитывает уже более семидесяти регионов России.
+                        </p>
+                        <p>Мы умеем быть щедрыми. Мы проводим длительные апробации, безвозмездно осуществляем бессрочную техническую поддержку, </p>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <p>обучаем, ассистируем на операциях, налаживаем мосты между нашими врачами и их зарубежными коллегами.</p>
+                        <p>Мы патриоты и, стремясь быть максимально полезными, готовы переоборудовать, дополнить или укомплектовать заново любое медицинское учреждение – по последнему слову техники.</p>
+                        <p>Мы профессионалы и постоянно участвуем и организуем сами тренинги, семинары, презентации. Мы учимся, в теории и на деле, наш опыт становится все более ценным, и мы с радостью делимся нашими знаниями и навыками.</p>
+                        <p>
+                            Мы – Команда и всегда заодно. Мы верим в успех каждого, кто с нами, и делаем все, чтобы этот успех состоялся в первый, второй, третий раз, и т.д. Так оно неизменно и происходит.
+                        </p>
+                        <p>Желаем и вам удачи!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main_pluses grey_bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3 col-xs-12 text-center main_pluses_item">
+                        <img src="img/icons/peace.png" alt="img/icons/peace.png">
+                        <p>более 10 лет на рынке</p>
+                    </div>
+                    <div class="col-sm-3 col-xs-12 text-center main_pluses_item">
+                        <img src="img/icons/house.png" alt="img/icons/house.png">
+                        <p>оборудование в наличии на складе</p>
+                    </div>
+                    <div class="col-sm-3 col-xs-12 text-center main_pluses_item">
+                        <div class="main_pluses_item">
+                            <img src="img/icons/mechOne.png" alt="img/icons/mechOne.png">
+                            <p>гарантийное и постгарантийное обслуживание
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12 text-center main_pluses_item">
+                        <img src="img/icons/operator.png" alt="img/icons/operator.png">
+                        <p>гарантийное и постгарантийное обслуживание
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="brands">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <h2 class="line">ПРЯМЫЕ КОНТАКТЫ С БРЕНДАМИ</h2>
+                        <div class="clearfix"></div>
+                        <p class="light_title line">Надежный поставщик лучших производителей </p>
+                    </div>
+                    <div class="col-xs-12 logo_slider" id="logo_slider">
+                        <div class="logo_slider_item">
+                            <div class="logo_slider_item_content"><img class="img-responsive" src="img/logos/Medavie-Blue-Cross-Logo-blue.png" alt="img/logos/Medavie-Blue-Cross-Logo-blue.png">
+                            </div>
+                        </div>
+                        <div class="logo_slider_item">
+                            <div class="logo_slider_item_content">
+                                <img class="img-responsive" src="img/logos/moeller_logo.png" alt="img/logos/moeller_logo.png">
+                            </div>
+                        </div>
+                        <div class="logo_slider_item">
+                            <div class="logo_slider_item_content"> <img class="img-responsive" src="img/logos/RAUMEDIC_Logo_RGB.png" alt="img/logos/RAUMEDIC_Logo_RGB.png">
+                            </div>
+                        </div>
+                        <div class="logo_slider_item">
+                            <div class="logo_slider_item_content"><img class="img-responsive" src="img/logos/struktura_mediana_logotip_velik.png" alt="img/logos/struktura_mediana_logotip_velik.png"></div>
+                        </div>
+                        <div class="logo_slider_item">
+                            <div class="logo_slider_item_content"><img class="img-responsive" src="img/logos/struktura_mediana_logotip_velik.png" alt="img/logos/struktura_mediana_logotip_velik.png"></div>
+                        </div>
+                        <div class="logo_slider_item">
+                            <div class="logo_slider_item_content"><img class="img-responsive" src="img/logos/struktura_mediana_logotip_velik.png" alt="img/logos/struktura_mediana_logotip_velik.png"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <a class="simpl_link" href="#">подробней о брендах</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="news">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <h2 class="line">новости компании</h2>
+                        <div class="clearfix"></div>
+                        <p class="light_title line">Наши события</p>
+                    </div>
+                </div>
+                <div class="row news_list">
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="news_list_item grey_bg">
+                            <div class="data">
+                                <div class="num">26</div>
+                                <div class="month_name">июля</div>
+                            </div>
+                            <div class="link_wrap">
+                                <a href="#" class="link">Подписан эксклюзивный контракт с ведущим мировым 
+производителем RAUMEDIC
+</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="news_list_item grey_bg">
+                            <div class="data">
+                                <div class="num">23</div>
+                                <div class="month_name">августа</div>
+                            </div>
+                            <div class="link_wrap">
+                                <a href="#" class="link">ООО "Лавентум" эксклюзивный поставщик аппаратов 
+ИВЛ eVent Medical</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <a class="simpl_link" href="#">все новости</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="clients hidden-sm hidden-xs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <h2 class="line">среди наших клиентов</h2>
+                        <div class="clearfix"></div>
+                        <p class="light_title line">Территория продаж по всей России</p>
+                    </div>
+                </div>
+                <div class="row map_buttons">
+                    <div class="col-sm-3 col-xs-12 col-xs-offset-0 col-sm-offset-3">
+                        <a class="text-center active pill pill-empty pill-full-width pill-grey" href="#tab1" role="tab" data-toggle="tab" aria-expanded="true">наши клиенты</a>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <a class="text-center pill pill-empty pill-full-width pill-grey" href="#tab2" role="tab" data-toggle="tab" aria-expanded="true">мы представляем в россии</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="map hidden-sm hidden-xs">
+<div class="tab-content">
+    <div class="tab-pane active" role="tabpanel" id="tab1">
+
+            <div class="container map_content">
+                <div class="dots_wrap" id="piter">
+                    <div class="dots dots_on_listen"></div>
+                    <div class="dots_text dots_on_listen bottom_text">г.Санкт - Петербург</div>
+
+                    <div class="dots_content">
+                        <div>Научный центр реконструктивной восстановительной хирургии
+                        <br><a href='#'>Подробнее</a></div>
+                    </div>
+                </div>
+                <div class="dots_wrap" id="vNovgorod">
+                    <div class="dots dots_on_listen"></div>
+                    <div class="dots_text dots_on_listen">Великий Новгород</div>
+                     <div class="dots_content">
+                        <div class="hidden">Научный центр реконструктивной восстановительной хирургии
+                        <br><a href='#'>Подробнее</a></div>
+                    </div>
+                </div>
+                <div class="dots_wrap" id="tver">
+                    <div class="dots dots_on_listen"></div>
+                    <div class="dots_text dots_on_listen">Тверь</div>
+                </div>
+                <div class="dots_wrap" id="smolensk">
+                    <div class="dots dots_on_listen"></div>
+                    <div class="dots_text dots_on_listen bottom_text">Смоленск</div>
+                </div>
+                <div class="dots_wrap" id="sivtivkar">
+                    <div class="dots dots_on_listen"></div>
+                    <div class="dots_text dots_on_listen bottom_text">Сыктывкар</div>
+                </div>
+                <div class="dots_wrap" id="nNovgorod">
+                    <div class="dots dots_on_listen"></div>
+                    <div class="dots_text dots_on_listen bottom_text">Нижний Новгород</div>
+                </div>
+                <div class="dots_wrap" id="voronezh">
+                    <div class="dots dots_on_listen"></div>
+                    <div class="dots_text dots_on_listen">Воронеж</div>
+                </div>
+                <div class="dots_wrap" id="rNaDony">
+                    <div class="dots dots_on_listen"></div>
+                    <div class="dots_text dots_on_listen top_text">Растов - на - Дону</div>
+                </div>
+                <div class="dots_wrap" id="volgograd">
+                    <div class="dots dots_on_listen"></div>
+                    <div class="dots_text dots_on_listen bottom_text">Волгоград</div>
+                </div>
+                <div class="dots_wrap" id="krasnodar">
+                    <div class="dots dots_on_listen"></div>
+                    <div class="dots_text dots_on_listen">Краснодар</div>
+                </div>
+                <div class="dots_wrap" id="stavropol">
+                    <div class="dots dots_on_listen"></div>
+                    <div class="dots_text dots_on_listen">Ставрополь</div>
+                </div>
+                <div class="dots_wrap" id="nalchik">
+                    <div class="dots dots_on_listen"></div>
+                    <div class="dots_text dots_on_listen top_text center_text">Нальчик</div>
+                </div>
+                <div class="dots_wrap" id="astrhan">
+                    <div class="dots dots_on_listen"></div>
+                    <div class="dots_text dots_on_listen top_text">Астрахань</div>
+                </div>
+                <div class="dots_wrap" id="vladikavkaz">
+                    <div class="dots dots_on_listen"></div>
+                    <div class="dots_text dots_on_listen bottom_text">Владикавказ</div>
+                </div>
+                <div class="dots_wrap" id="perm">
+                    <div class="dots dots_on_listen"></div>
+                    <div class="dots_text dots_on_listen">Пермь</div>
+                </div>
+                <div class="dots_wrap" id="ufa">
+                    <div class="dots dots_on_listen"></div>
+                    <div class="dots_text dots_on_listen">Уфа</div>
+                </div>
+                <div class="dots_wrap" id="orenburg">
+                    <div class="dots dots_on_listen"></div>
+                    <div class="dots_text dots_on_listen">Оренбург</div>
+                </div>
+                <div class="dots_wrap" id="chelyabinsk">
+                    <div class="dots dots_on_listen"></div>
+                    <div class="dots_text dots_on_listen top_text center_text">Челябинск</div>
+                </div>
+                <div class="dots_wrap" id="ekaterinburg">
+                    <div class="dots dots_on_listen"></div>
+                    <div class="dots_text dots_on_listen">Екатеринбург</div>
+                </div>
+                <div class="dots_wrap" id="urga">
+                    <div class="dots dots_on_listen"></div>
+                    <div class="dots_text dots_on_listen bottom_text">Юрга</div>
+                </div>
+                <div class="dots_wrap" id="kurgan">
+                    <div class="dots dots_on_listen"></div>
+                    <div class="dots_text dots_on_listen bottom_text center_text">Курган</div>
+                </div>
+                <div class="dots_wrap" id="tumen">
+                    <div class="dots dots_on_listen"></div>
+                    <div class="dots_text dots_on_listen">Тюмень</div>
+                </div>
+                <div class="dots_wrap" id="omsk">
+                    <div class="dots dots_on_listen"></div>
+                    <div class="dots_text dots_on_listen">Омск</div>
+                </div>
+                <div class="dots_wrap" id="tomsk">
+                    <div class="dots dots_on_listen"></div>
+                    <div class="dots_text dots_on_listen bottom_text center_text">Томск</div>
+                </div>
+                <div class="dots_wrap" id="kemerovo">
+                    <div class="dots dots_on_listen"></div>
+                    <div class="dots_text dots_on_listen">Кемерово</div>
+                </div>
+                <div class="dots_wrap" id="novosibirsk">
+                    <div class="dots dots_on_listen"></div>
+                    <div class="dots_text dots_on_listen bottom_text">Новосибирск</div>
+                </div>
+                <div class="dots_wrap" id="barnaul">
+                    <div class="dots dots_on_listen"></div>
+                    <div class="dots_text dots_on_listen bottom_text">Барнаул</div>
+                </div>
+                <div class="dots_wrap" id="irkutsk">
+                    <div class="dots dots_on_listen"></div>
+                    <div class="dots_text dots_on_listen top_text center_text">Иркутск</div>
+                </div>
+                <div class="dots_wrap" id="ylan">
+                    <div class="dots dots_on_listen"></div>
+                    <div class="dots_text dots_on_listen bottom_text">Улан- Удэ</div>
+                </div>
+                <div class="dots_wrap" id="blagoves">
+                    <div class="dots dots_on_listen"></div>
+                    <div class="dots_text dots_on_listen">Благовещенск</div>
+                </div>
+            </div>
+</div>
+
+<div class="tab-pane" role="tabpanel" id="tab2">
+    <div class="container map_content map_content_2">
+                <div class="dots_wrap" id="usa">
+                    <div class="dots dots_on_listen"></div>
+                    <div class="dots_text dots_on_listen bottom_text">США</div>
+
+                    <div class="dots_content">
+                        <div class="text-center">
+                        <img src="img/logos/hyper_branch.png" alt="img/logos/hyper_branch.png">
+                        <br><a href='#'>Подробнее</a></div>
+                    </div>
+                </div>
+                <div class="dots_wrap" id="britain">
+                    <div class="dots dots_on_listen"></div>
+                    <div class="dots_text dots_on_listen  top_text center_text">Великобритания</div>
+                     
+                </div>
+
+                <div class="dots_wrap" id="german">
+                    <div class="dots dots_on_listen"></div>
+                    <div class="dots_text dots_on_listen">Германия</div>
+                     
+                </div>
+
+                <div class="dots_wrap" id="france">
+                    <div class="dots dots_on_listen"></div>
+                    <div class="dots_text dots_on_listen">Франция</div>
+                     
+                </div>
+
+
+                <div class="dots_wrap" id="sCorea">
+                    <div class="dots dots_on_listen"></div>
+                    <div class="dots_text dots_on_listen top_text center_text">Южная Корея</div>
+                     
+                </div>
+
+                 <div class="dots_wrap" id="japan">
+                    <div class="dots dots_on_listen"></div>
+                    <div class="dots_text dots_on_listen">Япония </div>
+                     
+                </div>
+               
+            </div>
+</div>
+</div>
+   </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer_first_line">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3 hidden-xs">
+                        <nav>
+                            <ul class="nav">
+                                <li><a href="#">каталог</a></li>
+                                <li><a href="#">обучение</a></li>
+                                <li><a href="#">тех. поддержка</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-sm-3 hidden-xs">
+                        <nav>
+                            <ul class="nav">
+                                <li><a href="#">о компании</a></li>
+                                <li><a href="#">отзывы</a></li>
+                                <li><a href="#">новости</a></li>
+                                <li><a href="#">контакты</a></li>
+                                <li><a href="#">видео</a></li>
+                                <li><a href="#">партнерство</a></li>
+                                <li><a href="#">производители</a></li>
+                                <li><a href="#">производители</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="footer_contacts">
+                            <div class="footer_contacts_title">Тел./Факс:</div>
+                            <a href="tel:8 (800) 700-50-82">8 (800) 700-50-82</a>
+                        </div>
+                        <div class="footer_contacts">
+                            <div class="footer_contacts_title">Бесплатный звонок:</div>
+                            <a href="tel:8 (800) 700-50-82"> 8 (800) 700-50-82</a>
+                        </div>
+                        <div class="footer_contacts">
+                            <div class="footer_contacts_title">Адрес:</div>
+                            <address>123100, г. Москва,
+                                <br> ул. Сергея Макеева, д. 7, стр. 2</address>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="footer_contacts">
+                            <div class="footer_contacts_title">По  вопросам сотрудничества:</div>
+                            <a href="mailto:info@laventum.ru">info@laventum.ru</a>
+                        </div>
+                        <div class="footer_contacts">
+                            <div class="footer_contacts_title">Сервисная поддержка:</div>
+                            <a href="mailto:service@laventum.ru">service@laventum.ru</a>
+                        </div>
+                        <div class="footer_contacts">
+                            <div class="footer_contacts_title">Координатор отдела продаж:</div>
+                            <a href="mailto:office@laventum.ru">office@laventum.ru</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="footer_second_line">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <div class="copyrights">
+                            © 2010-2013 ООО «Лавентум»
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="js/lib.js"></script>
+<script src="js/app.js"></script>
+
+</html>

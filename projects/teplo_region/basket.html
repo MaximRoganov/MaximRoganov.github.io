@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Extream | Корзина</title>
+
+    <!-- Styles -->
+    <link href="css/bootstrap-grid.min.css" rel="stylesheet"> <!-- bootstrap grid only -->
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/jquery.bxslider.css" rel="stylesheet">
+    <link href="css/colorbox.css" rel="stylesheet">
+    <link href="css/jquery.formstyler.css" rel="stylesheet">
+    <link href="css/jquery.pwstabs.css" rel="stylesheet">
+    <link href="css/main_styles.css" rel="stylesheet">
+
+    <!-- HTML5 Shim IE8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+    <!-- header block -->
+    <header role="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-2">
+            <a class="logo" href="/" title="Extream">
+              <img src="images/logo.png" alt="Extream">
+            </a>
+          </div>
+          <div class="col-xs-7">
+            <nav class="nav_bar" role="navigation">
+              <ul class="nav_level1 clearfix">
+                <li><a href="#" title="О компании">О компании</a></li>
+                <li><a href="#" title="Продукция">Продукция</a>
+                  <ul class="nav_level2">
+                    <li><a href="#" title="Теплоносители"><span class="underline">Теплоносители</span></a></li>
+                    <li><a href="#" title="Хладоносители"><span class="underline">Хладоносители</span></a></li>
+                    <li><a href="#" title="Пропиленгликоль"><span class="underline">Пропиленгликоль</span></a></li>
+                  </ul>
+                </li>
+                <li><a href="#" title="Контакты">Контакты</a></li>
+                <li><a href="#" title="Поставка/оплата">Поставка/оплата</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-xs-1">
+            <a class="basket" href="#" title="Корзина">Корзина</a>
+          </div>
+          <div class="col-xs-2">
+            <address>
+              <div class="phone">+7 800 555-35-35</div>
+              <a class="mail" href="mailto:teplo@teplo.ru" title="teplo@teplo.ru">teplo@teplo.ru</a>
+            </address>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end header block -->
+
+    <!-- content block -->
+    <main role="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <ul class="breadcrumbs">
+              <li><a href="#" title="Продукция">Корзина</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <section class="stage_buy">
+      	<div class="container">
+      		<div class="row top_basket">
+      			<div class="col-xs-4">
+      				<h3 class="active">1.Корзина</h3>
+      			</div>
+      			<div class="col-xs-4">
+      				<h3 class="txt-align-c right_arrow">2.Доставка</h3>
+      			</div>
+      			<div class="col-xs-4">
+      				<h3>3.Оплата</h3>
+      			</div>
+      		</div>
+      		<div class="row">
+      			<div class="col-xs-12">
+      				<table>
+      					<tr>
+      						<td class="img_cell">
+      							<img src="images/!user_files/1.jpg" alt="">
+      						</td>
+      						<td>
+      							<div class="cell_top">Теплоноситель "Комфорт" марки А</div>
+      							<a href="#" title="Удалить" class="item_del">Удалить</a>
+      						</td>
+      						<td>
+      							<div class="cell_top">Стоимость<br> одной единицы</div>
+      							<div class="price price_main txt-align-c">2 000 руб.</div>
+      						</td>
+      						<td>
+      							<div class="cell_top">Количество</div>
+								<div class="plus_minus txt-align-c">
+									<input type="text" placeholder="2">                    
+								</div>      							
+      						</td>
+      						<td>
+      							<div class="cell_top">Итого</div> 
+      							<div class="price price_main txt-align-c">4 000 руб.</div>     							
+      						</td>
+      					</tr>
+      					<tr>
+      						<td class="img_cell">
+      							<img src="images/!user_files/1.jpg" alt="">
+      						</td>
+      						<td>
+      							<div class="cell_top">Теплоноситель "Комфорт" марки А</div>
+      							<a href="#" title="Удалить" class="item_del">Удалить</a>
+      						</td>
+      						<td>
+      							<div class="cell_top">Стоимость<br> одной единицы</div>
+      							<div class="price price_main txt-align-c">2 000 руб.</div>
+      						</td>
+      						<td>
+      							<div class="cell_top">Количество</div>
+								<div class="plus_minus txt-align-c">
+									<input type="text" placeholder="2">                    
+								</div>      							
+      						</td>
+      						<td>
+      							<div class="cell_top">Итого</div> 
+      							<div class="price price_main txt-align-c">4 000 руб.</div>     							
+      						</td>
+      					</tr>
+      				</table>
+      			</div>
+      		</div>
+      		<div class="row">
+      			<div class="wrap_row clearfix">
+	      			<div class="col-xs-1 col-xs-offset-9">
+	      				<span class="total">Итого:</span>
+	      			</div>
+	      			<div class="col-xs-2">
+						<div class="price price_main price_total">8 000 руб.</div>
+						<span class="nds">Цена указана с НДС</span>       				
+	      			</div>
+      			</div>
+      		</div>
+      		<div class="row">
+      			<div class="col-xs-3 col-xs-offset-9">
+      				<a href="#" title="Далее" class="btn2 txt-align-c">Далее</a>
+      			</div>
+      		</div>
+      	</div>
+      	<!-- Stage 2 -->
+		<div class="container stage2">
+      		<div class="row top_basket">
+      			<div class="col-xs-4">
+      				<h3 class="compleate">1.Корзина</h3>
+      			</div>
+      			<div class="col-xs-4">
+      				<h3 class="active txt-align-c right_arrow">2.Доставка</h3>
+      			</div>
+      			<div class="col-xs-4">
+      				<h3>3.Оплата</h3>
+      			</div>
+      		</div>     		
+      	</div>
+	      <section class="tabs tabs2">
+	        <div class="tabs_menu">
+	           <div data-pws-tab="anynameyouwant1" data-pws-tab-name="<span class='underline'>Наша доставка</span>">
+	            <div class="container">
+	              <div class="row">
+	                <div class="col-xs-4">
+	                  <h5>1. Заполните заявку</h5>
+	                </div>
+	                <div class="col-xs-4">
+	                  <h5 class="address_margin">2. Укажите адрес доставки</h5>
+	                </div>
+	              </div>
+	              <div class="row">
+	              	<div class="col-xs-4">
+	              		<div class="pop_up container_from">
+	              			<label for="your_nam2">Ваше имя</label>	              		
+	              			<input id="your_nam2" type="text">	              			
+	              		</div>
+						<div class="pop_up container_from">
+	              			<label for="phone_form2">Телефон</label>	              		
+	              			<input id="phone_form2" class="phone_form" type="text">
+						</div>
+	              	</div>
+	              	<div class="col-xs-4">
+	              		<div class="pop_up address_del container_from">
+	              			<label for="address_phone2">Адрес</label>	              		
+	              			<input id="address_phone2" type="text">
+	              			<label for="house_form">Дом</label>	              		
+	              			<input id="house_form" class="input_min input_address" type="text">
+	              			<label for="kv">Квартира</label>	              		
+	              			<input id="kv" class="input_min" type="text">	              				              			
+	              		</div>	              		
+	              	</div>
+	              	<div class="col-xs-3 col-xs-offset-1">
+	              		<a href="#" title="Далее" class="btn2 txt-align-c">Далее</a>
+	              	</div>
+	              </div>
+	            </div>                
+	           </div>
+	           <div data-pws-tab="anynameyouwant2" data-pws-tab-name="<span class='underline'>Самовывоз</span>">
+	            <div class="container">
+	              <div class="row">
+	                <div class="col-xs-4">
+	                  <h5>1. Заполните заявку</h5>
+	                </div>
+	                <div class="col-xs-4">
+	                  <h5 class="address_margin">2. Адрес самовывоза</h5>
+	                </div>
+	              </div>
+	              <div class="row">
+	              	<div class="col-xs-4">
+	              		<div class="pop_up container_from">
+	              			<label for="your_nam2">Ваше имя</label>	              		
+	              			<input id="your_nam2" type="text">	              			
+	              		</div>
+						<div class="pop_up container_from">
+	              			<label for="phone_form2">Телефон</label>	              		
+	              			<input id="phone_form2" class="phone_form" type="text">
+						</div>
+	              	</div>
+	              	<div class="col-xs-4">
+	              		<div class="pop_up address_del container_from">
+	              			<label for="address_phone2">Адрес</label>	              		
+	              			<input id="address_phone2" type="text">
+	              			<label for="phone_form2">Телефон</label>	              		
+	              			<input id="phone_form2" class="phone_form" type="text">	              				  		
+	              		</div>	              		
+	              	</div>
+	              	<div class="col-xs-3 col-xs-offset-1">
+	              		<a href="#" title="Далее" class="btn2 txt-align-c">Далее</a>
+	              	</div>
+	              </div>
+	            </div>
+	           </div>
+	        </div>     
+	      </section>
+	      <!-- Stage 3 -->
+			<div class="container tabs2 stage3">
+				<div class="row top_basket">
+					<div class="col-xs-4">
+						<h3 class="compleate">1.Корзина</h3>
+					</div>
+					<div class="col-xs-4">
+						<h3 class="txt-align-c right_arrow">2.Доставка</h3>
+					</div>
+					<div class="col-xs-4">
+						<h3 class="active">3.Оплата</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<h5 class="pay_h">Способы оплаты</h3>
+					</div>
+				</div>
+				<div class="row row_table">
+					<div class="col-xs-4 img_type shadow_in">
+						<div class="payment">Банковский перевод
+						  	<div class="checkbox">
+						  		<input type="radio" id="checkbox_in" name="pay" checked="checked"/>
+							  	<label for="checkbox_in"></label>
+						  	</div>
+						</div>
+					</div>
+					<div class="col-xs-4 img_type2">
+						<div class="payment">Оплата картой
+						  	<div class="checkbox">
+						  		<input type="radio" id="checkbox_in2" name="pay" />
+							  	<label for="checkbox_in2"></label>
+						  	</div>
+						</div>						
+					</div>
+					<div class="col-xs-4 img_type3">
+						<div class="payment">Оплата наличными
+						  	<div class="checkbox">
+						  		<input type="radio" id="checkbox_in3" name="pay" />
+							  	<label for="checkbox_in3"></label>
+						  	</div>
+						</div>						
+					</div>
+				</div>
+        <div class="row">
+          <div class="col-xs-3 col-xs-push-6">
+            <div class="success_info">
+              <div class="qs">Остались вопрсы?</div>
+              <div class="phone">+7 800 555-35-35</div>
+            </div>
+          </div>
+          <div class="col-xs-3 col-xs-push-6">
+            <a href="#" title="Оформить" class="btn2 txt-align-c btn_success">Оформить</a>
+          </div>
+        </div>    		
+			</div>	      
+      </section>
+    </main>
+    <!-- end content block -->
+    <!-- footer block -->
+    <footer class="footer_in" role="contentinfo">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-4">
+          <nav class="nav_bar nav_bar_footer">
+            <ul class="nav_level1 clearfix">
+              <li><a href="#" title="О компании">О компании</a></li>
+              <li><a href="#" title="Продукция">Продукция</a></li>
+              <li><a href="#" title="Контакты">Контакты</a></li>
+              <li><a href="#" title="Поставка/оплата">Поставка/оплата</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-xs-4 txt-align-c">
+          <a class="logo logo_footer" href="/" title="Extream">
+            <img src="images/logo_footer.png" alt="Extream">
+          </a>
+        </div>
+        <div class="col-xs-4">
+          <address class="address_footer">
+            <div class="phone">+7 800 555-35-35</div>
+            <a class="mail" href="mailto:teplo@teplo.ru" title="teplo@teplo.ru">teplo@teplo.ru</a>
+          </address>          
+        </div>
+      </div>
+    </div>
+    </footer>
+    <div class="popup_wrap">
+      <div class="pop_up txt-align-c">
+        <h5>Закзать в один клик</h5>
+        <div class="container_from">
+          <label for="your_name">Ваше имя</label>
+          <input id="your_name" type="text"><br>
+        </div>
+        <div class="container_from">
+          <label for="your_phone">Ваш телефон</label>
+          <input class="phone_form" id="your_phone" type="text">
+        </div>
+        <input type="submit" class="btn2">
+        <a class="question" href="#" title="Остались вопросы?">Остались вопросы?</a>
+        <div class="form_phone">+7 800 555-35-35</div>
+      </div>
+    </div>
+    <!-- end footer block -->
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/src/infobox.js"></script>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/jquery.colorbox-min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/jquery.pwstabs.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
